@@ -1,1 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
+/* Solid background color for the entire app */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #282c34; /* Dark solid background */
+  color: #fff; /* Ensure text is visible */
+}
+
+.app-container {
+  position: relative;
+  height: 100%;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #1c1f26; /* Darker gray for sidebar to contrast with the solid background */
+  color: #fff; /* White text for better readability */
+  width: 250px;
+  height: 100%;
+  padding-top: 60px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar open state */
+.sidebar.open {
+  transform: translateX(250px);
+  transition: transform 0.3s ease;
+}
+
+/* Menu and logout icon styles */
+.menu-icon, .logout-icon {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+ /* background-color: #61dafb; /* Light blue background for contrast */
+  color: #fff; /* Dark color to contrast with the light blue background */
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  
+}
+
+.menu-icon {
+  top: 10px;
+  left: 10px;
+}
+
+.logout-icon {
+  top: 10px;
+  right: 10px;
+}
+
+/* Sidebar navigation list */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar list item styles */
+.sidebar ul li {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #333; /* Subtle separator between items */
+}
+
+.sidebar ul li a {
+  color: #61dafb; /* Light blue for links */
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* .sidebar ul li a:hover {
+  
+  padding-left: 2x;
+} */
+
+.sidebar ul li:hover {
+  border-left: 5px solid #61dafb; /* Light blue left border */
+}
+
+.sidebar ul li.active {
+  border-left: 5px solid #61dafb; /* Light blue left border */
+}
+/* Ensure body doesn't have unintended margins */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}

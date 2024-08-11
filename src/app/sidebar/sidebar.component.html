@@ -1,0 +1,12 @@
+<div class="menu-container" [class.open]="isMenuOpen" (clickOutside)="closeMenu()">
+  <div class="menu-icon" (click)="toggleMenu()">&#9776;</div>
+  <div class="sidebar" [class.open]="isMenuOpen">
+    <span class="close-button" (click)="closeMenu()">&times;</span>
+    <ul>
+      <li routerLinkActive="active"><a routerLink="/dashboard">Dashboard</a></li>
+      <li routerLinkActive="active"><a routerLink="/ai">AI</a></li>
+      <li routerLinkActive="active"><a routerLink="/aws">AWS</a></li>
+      <li routerLinkActive="active"><a routerLink="/springboot">Spring Boot</a></li>
+    </ul>
+  </div>
+</div>
